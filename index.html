@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>📚 BookNest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">📚 BookNest</div>
+      <nav class="nav">
+        <a href="#">CEO's Picks</a>
+        <a href="#">New Releases</a>
+        <a href="#">Fiction</a>
+        <a href="#">Non‑Fiction</a>
+        <a href="#">Children</a>
+      </nav>
+     <div class="actions">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search books..." class="search" />
+    <button id="searchBtn" class="search-btn">Search</button>
+  </div>
+  <a href="cart.html" class="btn">Cart (0)</a>
+</div>
+
+    </div>
+  </header>
+
+ <section class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Discover Your Next Read</h1>
+      <p>Explore thousands of titles across all genres.</p>
+      <button class="btn-cta" onclick="window.location.href='shop.html'">Shop Now</button>
+    </div>
+
+    <div class="hero-slider">
+      <button class="slider-btn prev">&#10094;</button>
+      <div class="slider-images">
+        <img src="images/collage 2.jpg" class="slide active" alt="Slide 1" />
+        <img src="images/collage 3.jpg" class="slide" alt="Slide 2" />
+        <img src="images/Collage 1.jpeg" class="slide" alt="Slide 3" />
+      </div>
+      <button class="slider-btn next">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="sale-banner">
+  <div class="scroll-text">🎉 Sale 20% OFF on all books! 🎉 Sale 20% OFF on all books! 🎉</div>
+</section>
+
+
+  <section class="grid-section container">
+    <h2>Featured Books</h2>
+    <div class="grid" data-title="Harry Potter and the Sorcerer's Stone">
+      <div class="card">
+        <img src="images/81q77Q39nEL._UF1000,1000_QL80_.jpg" alt="Book 1"/>
+        <h3>Harry Potter and the Sorcerer's Stone</h3>
+        <p class="price">&#8377 279</p>
+        <button class="btn-cart">Add to Cart</button>
+         
+      </div>
+       <div class="card" data-title="Atomic Habits">
+        <img src="images/root4.jpg" alt="Book 1"/>
+        <h3>Atomic Habits</h3>
+        <p class="price">&#8377 546</p>
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+      <div class="card" data-title="Game Of thrones">
+        <img src="images/got.jpeg" alt="Book 1"/>
+        <h3>Game Of thrones</h3>
+        <p class="price">&#8377 749</p>
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+      <div class="card" data-title="Fifty Shades Of Gray">
+        <img src="images/Fifty shades of gray.jpeg" alt="Book 1"/>
+        <h3>Fifty Shades Of Gray</h3>
+        <p class="price">&#8377 439</p>
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+      <div class="card" data-title="Lord Of The Rings">
+        <img src="images/Lord of rings.jpeg" alt="Book 2"/>
+        <h3>Lord Of The Rings</h3>
+        <p class="price">&#8377 899</p>
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+      <div class="card" data-title="One Piece">
+        <img src="images/one pice.jpeg" alt="Book 2"/>
+        <h3>One Piece</h3>
+        <p class="price">&#8377 499</p>
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+      <div class="card" data-title="The Lean Startup">
+        <img src="https://m.media-amazon.com/images/I/81-QB7nDh4L.jpg" alt="Book 3"/>
+        <h3>The Lean Startup</h3>
+        <p class="price">&#8377 659</p>
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+      <div class="card" data-title="Think and Grow Rich">
+        <img src="images/think and grow.jpg" alt="Book 3"/>
+        <h3>Think and Grow Rich</h3>
+        <p class="price">&#8377 579</p>
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+      <div class="card" data-title="Ikigai">
+        <img src="images/root6.jpg" alt="Book 4"/>
+        <h3>Ikigai</h3>
+        <p class="price">&#8377 340</p>
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+      <div class="card" data-title="Metamorphosis">
+        <img src="images/Metamorphosis.jpg" alt="Book 4"/>
+        <h3>Metamorphosis</h3>
+        <p class="price">&#8377 433</p>
+        <button class="btn-cart">Add to Cart</button>
+      </div>
+    </div>
+    <p id="noResults" style="display: none; text-align: center; font-weight: bold; margin-top: 20px; color: #d90429;">
+  No results found.
+</p>
+
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Pranav</p>
+    </div>
+  </footer>
+</body>
+</html>
+<script src="script.js"></script>

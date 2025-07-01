@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Books</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shop.css">
+ 
+</head>
+<body>
+  <div class="topbar">Great Reads, Great Prices - Shop Now!</div>
+  <!-- <div class="navbar">
+    <div class="left">
+      <input type="text" placeholder="Search by keywords" />
+      <span>Books</span>
+      <span>Kids</span>
+      <span>Sale</span>
+      <span>Gifts & Lifestyle</span>
+      <span>Events</span>
+    </div>
+    <div class="right">
+      <span>🛒 Bag</span>
+      <button>Login / Join</button>
+    </div>
+  </div> -->
+  <div class="navbar">
+  <div class="navbar-content">
+    <h1 class="brand">📚 BookNest</h1>
+
+    <div class="nav-actions">
+      <div class="search-container">
+        <a href="index.html" class="home-btn">🏠 Home</a>
+        <input type="text" id="searchInput" placeholder="Search books..." />
+        <button onclick="searchBooks()">Search</button>
+      </div>
+      <div class="filter-right-nav" onclick="document.getElementById('priceFilterBox').style.display='block'">
+        🔍 Filter
+      </div>
+      <a href="cart.html" class="cart-btn">🛒 Cart</a>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="container">
+    <div class="header-nav">
+      <h2>Essential Business Reads</h2>
+      <p>20 products found</p>
+    </div>
+    <div class="filter-bar">
+      <!-- <div class="filter-left" onclick="alert('Open filter sidebar!')">
+        <span>🔍 Filter</span>
+      </div> -->
+      <!-- <div class="filter-right">
+        <span>📅 Grid</span>
+        <span>☰ List</span>
+        <label for="sort">Sort By</label>
+        <select id="sort">
+          <option value="position">Position</option>
+          <option value="priceLow">Price: Low to High</option>
+          <option value="priceHigh">Price: High to Low</option>
+        </select>
+      </div> -->
+    </div>
+    <div id="priceFilterBox" style="display:none; position: fixed; left: 0; top: 0; width: 300px; height: 100%; background: white; border-right: 1px solid #ddd; box-shadow: 2px 0 10px rgba(0,0,0,0.1); z-index: 9999; padding: 20px;">
+  <h3>Filter by Price</h3>
+  <!-- <label><input type="radio" name="price" value="all" checked> All</label><br>
+  <label><input type="radio" name="price" value="under20"> Under ₹20</label><br>
+  <label><input type="radio" name="price" value="20to30"> ₹20 to ₹30</label><br>
+  <label><input type="radio" name="price" value="above30"> ₹30+</label><br><br> -->
+  <input type="radio" name="price" value="under200" onclick="applyPriceFilter()" /> Under ₹200 <br>
+  <input type="radio" name="price" value="200to300" onclick="applyPriceFilter()" /> ₹200 – ₹300 <br>
+  <input type="radio" name="price" value="above300" onclick="applyPriceFilter()" /> Above ₹300 <br>
+  <input type="radio" name="price" value="400to500" onclick="applyPriceFilter()" /> ₹400 – ₹500 <br>
+  <input type="radio" name="price" value="above500" onclick="applyPriceFilter()" /> Above ₹500 <br>
+  <input type="radio" name="price" value="above1000" onclick="applyPriceFilter()" /> Above ₹1000 <br>
+
+  <button onclick="applyPriceFilter()">Apply</button>
+  <button onclick="document.getElementById('priceFilterBox').style.display='none'">Close</button>
+</div>
+<!-- <div class="filter-left" onclick="document.getElementById('priceFilterBox').style.display='block'">
+  <span>🔍 Filter</span>
+</div> -->
+
+    <div class="grid" id="bookGrid"></div>
+  </div>
+
+  <script src="shop.js">
+    
+  </script>
+</body>
+</html>

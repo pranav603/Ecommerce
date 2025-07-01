@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bag</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <div class="container">
+    <div class="cart-section">
+      <h1>My Bag</h1>
+      <p id="empty-msg">Shopping bag is empty</p>
+      <div id="cart-items"></div>
+      <div class="actions">
+        <a href="index.html">
+          <button class="btn-continue">Continue Shopping</button>
+        </a>
+        <button class="btn-clear" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+
+    <div class="summary-section" id="price-summary" style="display:none;">
+      <h3>PRICE DETAILS</h3>
+      <div class="summary-line"><span id="price-label">Price (0 items)</span><span id="price">₹0</span></div>
+      <div class="summary-line"><span>Discount</span><span id="discount">– ₹0</span></div>
+      <div class="summary-line"><span>Coupons for you</span><span>– ₹100</span></div>
+      <div class="summary-line"><span>Platform Fee</span><span>₹4</span></div>
+      <div class="summary-line total"><span>Total Amount</span><span id="total">₹0</span></div>
+      <div class="savings" id="savings">You will save ₹0 on this order</div>
+      <button class="btn-order" onclick="placeOrder()">Place Order</button>
+
+    </div>
+  </div>
+  <div id="cartContainer" class="cart-grid"></div>
+
+
+  <script src="cart.js">
+    
+
+  </script>
+</body>
+</html>
